@@ -18,7 +18,7 @@ class AppRepositoryImpl @Inject constructor(override val apiClient: ApiServices)
             if(dataResponse.body()?.headerStatus?.code==200){
                 ApiResultData.Success(dataResponse.body()!!)
             }else{
-                ApiResultData.Error(Throwable())
+
             }
 
         }catch (e : Exception){
