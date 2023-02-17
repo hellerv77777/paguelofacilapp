@@ -2,9 +2,9 @@ name: Android CI
 
 on:
   push:
-    branches: [ "cci/cd" ]
+    branches: [ "cci/cd", "master" ]
   pull_request:
-    branches: [ "cci/cd" ]
+    branches: [ "cci/cd", "master" ]
 
 jobs:
   build:
